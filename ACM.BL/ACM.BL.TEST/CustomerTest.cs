@@ -68,6 +68,26 @@ namespace ACM.BL.TEST
         
         }
 
+        [Fact]
+        public void StaticTest()
+        {
+            //we devide the codein three A
+
+            // Arrange
+            // make three ovjects
+            var c1 = new Customer();
+            var c2 = new Customer();
+            var c3 = new Customer();
+            // Act
+            // for three iinstalce we will increase this three time
+            Customer.InstanceCount += 1;
+            Customer.InstanceCount += 1;
+            Customer.InstanceCount += 1;
+
+            // Assert
+            Assert.Equal(3, Customer.InstanceCount);
+        }
+
     }
 
 }

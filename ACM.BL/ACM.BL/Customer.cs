@@ -10,6 +10,13 @@ namespace ACM.BL
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string CustomerId { get; private set; }
+
+        // make a static attribute to store the number of instance 
+        // to find the number of customer that is created
+        // this will be a static not no instance in necessary
+        public static int InstanceCount { get; set; } // added test
+
+
         public string FullName {
 
             get
@@ -32,6 +39,8 @@ namespace ACM.BL
 
                 return fullname;
             }
+
+
         }
     }
 }
