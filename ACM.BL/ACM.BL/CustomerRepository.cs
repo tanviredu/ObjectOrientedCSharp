@@ -1,11 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
 using System.Text;
 
 namespace ACM.BL
 {
     public class CustomerRepository{
+        
+        // added a attribute 
+        // to store the adress repository
+        // add a extra field
+        private AddressRepository addressRepository { get; set; }
+        public CustomerRepository()
+        {
+            addressRepository = new AddressRepository();
+
+        }
 
         // This repository 
         // will have the data save and retrieve method
@@ -31,6 +42,13 @@ namespace ACM.BL
                 customer.EmailAddress = "ornobtanvir.git@gmail.com";
                 customer.FirstName = "Tanvir";
                 customer.LastName = "Rahman";
+                // add this address list for this
+                customer.AddressList = addressRepository.RetrieveCustomerById(customerid).ToList();
+
+
+
+
+                
             }
 
 

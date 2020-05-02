@@ -12,24 +12,18 @@ namespace ACM.BL
         // with a customer id parameter will return a single customer
         // overloaded customer
 
-        public Customer()
+        public Customer():this(0)
         {
 
         }
 
         public Customer(int customerid) {
             CustomerId = customerid;
+            // every customer has multiple address init the list
+            // if init with the customer id
+            // other wise init address list with zero
+            AddressList = new List<Address>();
         }
-
-
-
-
-
-
-
-
-
-
 
 
         // this is Customer type
@@ -69,6 +63,8 @@ namespace ACM.BL
 
 
         }
+
+        public List<Address> AddressList { get; internal set; }
 
         /// added the summery
         /// validate option for name (if lastname is empty thn validation error
