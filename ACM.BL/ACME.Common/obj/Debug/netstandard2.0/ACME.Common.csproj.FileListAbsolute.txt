@@ -1,0 +1,9 @@
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\bin\Debug\netstandard2.0\ACME.Common.deps.json
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\bin\Debug\netstandard2.0\ACME.Common.dll
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\bin\Debug\netstandard2.0\ACME.Common.pdb
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\obj\Debug\netstandard2.0\ACME.Common.csprojAssemblyReference.cache
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\obj\Debug\netstandard2.0\ACME.Common.csproj.CoreCompileInputs.cache
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\obj\Debug\netstandard2.0\ACME.Common.AssemblyInfoInputs.cache
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\obj\Debug\netstandard2.0\ACME.Common.AssemblyInfo.cs
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\obj\Debug\netstandard2.0\ACME.Common.dll
+A:\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\ACM.BL\ACME.Common\obj\Debug\netstandard2.0\ACME.Common.pdb

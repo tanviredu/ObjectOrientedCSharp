@@ -1,7 +1,8 @@
-﻿using System;
+﻿using ACME.Common;
+using System;
 using System.Collections.Generic;
 using System.Text;
-
+using ACME.Common;
 namespace ACM.BL
 {
     public class Product:EntityBase
@@ -20,8 +21,22 @@ namespace ACM.BL
         // we take this with the validate option
         public int ProductId { get; private set; }
         public decimal? CurrentPrice { get; set; }
-        public string ProductName { get; set; }
+        //public string ProductName { get; set; }
         public string ProductDescription { get; set; }
+
+        private string _productName;
+
+        public string ProductName
+        {
+            get
+            {
+                return Stringhandler.InsetSpaces(_productName);
+            }
+            set
+            {
+                _productName = value;
+            }
+        }
 
 
 

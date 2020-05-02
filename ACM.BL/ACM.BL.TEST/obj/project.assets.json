@@ -905,11 +905,24 @@
       "ACM.BL/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v3.1",
+        "dependencies": {
+          "ACME.Common": "1.0.0"
+        },
         "compile": {
           "bin/placeholder/ACM.BL.dll": {}
         },
         "runtime": {
           "bin/placeholder/ACM.BL.dll": {}
+        }
+      },
+      "ACME.Common/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/ACME.Common.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ACME.Common.dll": {}
         }
       }
     }
@@ -3509,11 +3522,17 @@
       "type": "project",
       "path": "../ACM.BL/ACM.BL.csproj",
       "msbuildProject": "../ACM.BL/ACM.BL.csproj"
+    },
+    "ACME.Common/1.0.0": {
+      "type": "project",
+      "path": "../ACME.Common/ACME.Common.csproj",
+      "msbuildProject": "../ACME.Common/ACME.Common.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v3.1": [
       "ACM.BL >= 1.0.0",
+      "ACME.Common >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 16.5.0",
       "coverlet.collector >= 1.2.0",
       "xunit >= 2.4.0",
@@ -3548,6 +3567,9 @@
           "projectReferences": {
             "A:\\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\\ACM.BL\\ACM.BL\\ACM.BL.csproj": {
               "projectPath": "A:\\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\\ACM.BL\\ACM.BL\\ACM.BL.csproj"
+            },
+            "A:\\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\\ACM.BL\\ACME.Common\\ACME.Common.csproj": {
+              "projectPath": "A:\\OBJECT_ORIENTED_PROGRAMMING_WITH_C_SHARP\\ACM.BL\\ACME.Common\\ACME.Common.csproj"
             }
           }
         }
