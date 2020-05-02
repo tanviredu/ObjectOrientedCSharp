@@ -27,16 +27,7 @@ namespace ACM.BL
         
         // retrieve the order 
 
-        public Order Retrieve(int orderid)
-        {
-            return new Order();
-        }
-
-        public bool save()
-        {
-            return true;
-        }
-
+        
         /// validate method
         public bool Validate()
         {

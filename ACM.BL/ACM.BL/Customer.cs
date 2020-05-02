@@ -89,18 +89,7 @@ namespace ACM.BL
 
         }
 
-        public bool Save()
-        {
-            return true;
-        }
-
-        // we make another Method that retreve a customer
-
-        public Customer Retreve(int customerid) {
-
-            return new Customer();
-        }
-
+        
 
         // we make another method to retreve a list 
         // of the customers and we use list type

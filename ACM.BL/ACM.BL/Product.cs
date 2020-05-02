@@ -23,19 +23,7 @@ namespace ACM.BL
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
 
-        // retreve one products
-        // this will trigger the second constructor
-        public Product Retrieve(int productid)
-        {
-            return new Product();
-        }
-
-        /// adding the save funcion
-        public bool Save()
-        {
-            return true;
-        }
-
+        
         // added validate method
         // validate method will take care of the 
         // empty ProductName 
