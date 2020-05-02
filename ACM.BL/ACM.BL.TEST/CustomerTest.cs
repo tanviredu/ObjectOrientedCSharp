@@ -63,12 +63,7 @@ namespace ACM.BL.TEST
 
 
         }
-        [Fact]
-        public void FullNameLastNameEmpty() { 
         
-        }
-
-        [Fact]
         public void StaticTest()
         {
             //we devide the codein three A
@@ -87,6 +82,78 @@ namespace ACM.BL.TEST
             // Assert
             Assert.Equal(3, Customer.InstanceCount);
         }
+
+
+        // test for Customer Valid method
+        public void ValidateValid()
+        {
+
+            /// arrange
+
+            var customer = new Customer
+            {
+                LastName = "Rahman",
+                EmailAddress = "ornobtanvir.git@gmail.com"
+            };
+
+            /// act
+            bool expected = true;
+            bool actual = customer.Validate();
+
+            ///Assert
+
+            Assert.Equal(expected, actual);
+
+
+
+        }
+
+        // so if the lastName is missing 
+        // then we must validate
+        // and test it with unit test
+
+
+        [Fact]
+        public void ValidateMissingLastName()
+        {
+
+            //arrange
+
+            Customer customer = new Customer
+            {
+                // add with just the Email address
+                EmailAddress = "ornobtanvir.git@gmail.com"
+
+            };
+            //act
+
+            var expected = false;
+            var actual = customer.Validate();
+            //assert
+            Assert.Equal(expected, actual);
+
+        }
+
+        [Fact]
+        public void ValidateMissingEmailAddress()
+        {
+            // create a customer without EmailAddress
+            // arrange
+            Customer customer = new Customer
+            {
+                LastName = "Rahman"
+            };
+
+            // act
+            var expected = false;
+            var actual = customer.Validate();
+
+            Assert.Equal(expected, actual);
+            
+
+
+        }
+
 
     }
 
