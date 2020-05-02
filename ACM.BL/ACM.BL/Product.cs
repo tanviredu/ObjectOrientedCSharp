@@ -4,7 +4,7 @@ using System.Text;
 
 namespace ACM.BL
 {
-    public class Product
+    public class Product:EntityBase
     {
         // added overloaded constructor
         public Product()
@@ -54,7 +54,7 @@ namespace ACM.BL
         // validate method will take care of the 
         // empty ProductName 
         // and null price
-        public bool Validate()
+        public override bool Validate()
         {
             var isValid = true;
             if (string.IsNullOrWhiteSpace(ProductName))
