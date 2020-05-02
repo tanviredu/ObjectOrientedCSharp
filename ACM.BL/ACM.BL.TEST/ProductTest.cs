@@ -21,6 +21,9 @@ namespace ACM.BL.TEST
             bool expected = true;
             bool actual = product.Validate();
 
+            // here we make a a breakpoint and debug too see
+            // if the object is known as a Product name
+
             Assert.Equal(expected, actual);
         }
 

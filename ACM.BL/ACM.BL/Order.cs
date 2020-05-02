@@ -53,11 +53,12 @@ namespace ACM.BL
         public int OrderID { get; private set; }
         // this order id id tie to the orderitem id
         // in the Orderitem class
-    
-        
+        public override string ToString() => $"{OrderDate.Value.Date} ({OrderID})";
+
+
         // retrieve the order 
 
-        
+
         /// validate method
         public bool Validate()
         {

@@ -12,7 +12,7 @@ namespace ACM.BL
         // with a customer id parameter will return a single customer
         // overloaded customer
 
-        public Customer():this(0)
+        public Customer() : this(0)
         {
 
         }
@@ -36,6 +36,7 @@ namespace ACM.BL
         // to find the number of customer that is created
         // this will be a static not no instance in necessary
         public static int InstanceCount { get; set; } // added test
+        public override string ToString() => FullName;
 
 
         public string FullName {

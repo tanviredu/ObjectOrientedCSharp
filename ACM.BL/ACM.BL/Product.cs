@@ -23,7 +23,33 @@ namespace ACM.BL
         public string ProductName { get; set; }
         public string ProductDescription { get; set; }
 
-        
+
+
+
+        // we are going to add some of the decorator of the class
+        // default properties
+        // the by default tostring method will be overwrite
+        // for the class
+        // this is called  a decorator
+        public override string ToString() => ProductName;
+        // overwrite the method
+        // to print the product name
+        // insted of showing the class name
+        // after that the class name will be called with the 
+        // product name
+
+        // you can test using debugger in the test class 
+        // that its working
+
+
+
+
+
+
+
+
+
+
         // added validate method
         // validate method will take care of the 
         // empty ProductName 
