@@ -5,7 +5,7 @@ using System.Text;
 using ACME.Common;
 namespace ACM.BL
 {
-    public class Product:EntityBase
+    public class Product:EntityBase,Iloggable
     {
         // added overloaded constructor
         public Product()
@@ -82,10 +82,10 @@ namespace ACM.BL
             }
             return isValid;
         }
-       
 
-
-
-
+        public void Log()
+        {
+            Console.Write($"{ProductId} {CurrentPrice} {ProductDescription}");
+        }
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace ACM.BL
 {
-    public class Customer
+    public class Customer:EntityBase
     {
 
 
@@ -70,7 +70,7 @@ namespace ACM.BL
         /// added the summery
         /// validate option for name (if lastname is empty thn validation error
         /// add a unit test for the Validate
-        public bool Validate()
+        public override bool Validate()
         {
 
             var isValid = true;
@@ -98,7 +98,6 @@ namespace ACM.BL
             return new List<Customer>();
         }
 
-
-
+        
     }
 }

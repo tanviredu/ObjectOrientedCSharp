@@ -1,0 +1,33 @@
+﻿what is interface and how we work with it
+interface its like an abstract class
+where you define method without a body
+
+and if any class is bound by a interfce
+or we say if any class in inherited/ implementated we say
+you must implement the method other wise the program wont run
+thats a way of defensive coding that make user bound o follow
+the rule
+
+and here is nother point 
+suppose you make a class/ot type
+there are attribute in this class
+like a some filed for the blog
+like title.body,author etc
+and there is another different program that need to talk to this class
+may be apply some crud
+now you can make a interface called blogmanager
+and when the other will communicate this this class by implementating the class
+so they also have to implement the method in the interface and thats how 
+they communicate with the class
+
+like  a autor object will communicate with the blog with the blog manager
+
+
+
+
+
+
+## suupose every method needs a loggin mechanism 
+## to dore other developer to implement loggin mechanism
+## you must implementated the method
+## so every method have the loggin funcionality
